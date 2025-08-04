@@ -1,0 +1,112 @@
+@import url('./fonts/HARRYP__.TTF');
+* {
+     font-family: 'HarryP', cursive;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width:80px;
+  height: 80px;
+  border-radius:50% ;
+  object-fit: cover;
+  box-shadow: 0px 0px 0px black;
+  border: 3px solid white;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+  background-color: #FF8040;
+  padding: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#houseSelector {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 16px;
+  width: 220px;
+  border-radius: 8px;
+  border: 2px solid #0046FF;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  transition: border-color 0.3s;
+}
+
+#houseSelector:hover {
+  border-color: #254e91;
+}
+
+#cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+    padding: 20px;
+}
+
+.card {
+  /* flex: 1 0 200px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  gap: 10px;
+  background-color: #E9E9E9;
+  border: 2px solid black;
+  width: 220px;
+  padding: 10px;
+  margin: 15px;
+  height: 300px;
+  border-radius: 22px;
+  transition: transform 0.3s , background-color 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  background-color: #0046FF;
+}
+#loadMoreBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 25px;
+  background-color: #0046FF;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#loadMoreBtn:hover {
+  background-color: #254e91;
+  transform: scale(1.05);
+}
+footer {
+  background-color: #FF8040;
+  text-align: center;
+  padding: 15px 0;
+  font-size:20px;
+  color: #000;
+}
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  #houseSelector, #loadMoreBtn {
+    width: 90%;
+    font-size: 14px;
+  }
+
+}
